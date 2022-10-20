@@ -1,0 +1,29 @@
+.content__header {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  width: 1440px;
+  height: 195px;
+  left: 0px;
+  top: 0px;
+}
+
+.header__rectangle-red {
+  position: absolute;
+  width: 1440px;
+  height: 123.18px;
+  left: 0px;
+  top: 0px;
+  background: #DD1A1A;
+}
+
+.header__rectangle-red {
+  position: absolute;
+  width: 1440px;
+  height: 49.7px;
+  left: 0px;
+  top: 111.3px;
+  background: #0C0C0C;
+}

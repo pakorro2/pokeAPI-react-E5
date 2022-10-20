@@ -33,7 +33,7 @@ const Pagination = ({ page, pagesLength, setPage, setPokePerPage }) => {
   return (
     <div className='pagination'>
       <select className='pokedex__select' onChange={handlePokeXPage} id="type-select">
-        <option key='default' value='8'>Select pokemon by page</option>
+        <option key='default' value='8'>Select items per page</option>
         <option key='4' value='4'>4</option>
         <option key='8' value='8'>8</option>
         <option key='12' value='12'>12</option>

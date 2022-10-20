@@ -16,21 +16,104 @@
 
 .poke__img {
   position: relative;
-  width: 341px;
-  height: 314px;
+  max-width: 341px;
+  max-height: 314px;
   margin: 0 auto;
 
 }
 
+.primary__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .poke__name {
-  text-align: center;
   font-size: 2.5rem;
   text-transform: capitalize;
 }
 
 .poke__id {
-  text-align: center;
   font-size: 2rem;
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  width: fit-content;
+  padding: 5px 10px;
+
+}
+
+.poke__meter-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 15px;
+  ;
+}
+
+.poke__meter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meter-tag {
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+.meter-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.secondary__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.type-value {
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  width: fit-content;
+  padding: 10px 15px;
+}
+
+.skill-value {
+  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  width: fit-content;
+  padding: 10px 15px;
+}
+
+
+.type__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.type-tag {
+  padding: 15px;
+}
+
+.type-values {
+  display: flex;
+  gap: 25px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.poke__moves-body {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .poke__moves {
@@ -46,4 +129,96 @@
   width: auto;
   border: solid 1px rgb(159, 155, 155);
   background-color: rgb(224, 215, 215);
+}
+
+/*--- Background Color Simple---*/
+
+.bgs-grass {
+  background-color: #416460;
+  color: white;
+}
+
+.bgs-fire {
+  background-color: #E75C35;
+  color: white;
+}
+
+.bgs-water {
+  background-color: #1479FB;
+  color: white;
+}
+
+.bgs-normal {
+  background-color: #735259;
+  color: white;
+}
+
+.bgs-fighting {
+  background-color: #96402A;
+  color: white;
+}
+
+.bgs-flying {
+  background-color: #A98FF3;
+  color: white;
+}
+
+.bgs-bug {
+  background-color: #4AB648;
+  color: white;
+}
+
+.bgs-poison {
+  background-color: #5B3184;
+  color: white;
+}
+
+.bgs-ghost {
+  background-color: #323569;
+  color: white;
+}
+
+.bgs-rock {
+  background-color: #7E7E7E;
+  color: white;
+}
+
+.bgs-dark {
+  background-color: #030706;
+  color: white;
+}
+
+.bgs-ice {
+  background-color: #6FBEDF;
+  color: white;
+}
+
+.bgs-steel {
+  background-color: #5E736C;
+  color: white;
+}
+
+.bgs-dragon {
+  background-color: #478A93;
+  color: white;
+}
+
+.bgs-fairy {
+  background-color: #971B45;
+  color: white;
+}
+
+.bgs-electric {
+  background-color: #A2881D;
+  color: white;
+}
+
+.bgs-ground {
+  background-color: #654008;
+  color: white;
+}
+
+.bgs-psychic {
+  background-color: #E52D2D;
+  color: white;
 }
