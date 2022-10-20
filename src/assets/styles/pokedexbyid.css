@@ -68,6 +68,7 @@
   font-weight: 600;
 }
 
+
 .secondary__data {
   display: flex;
   align-items: center;
@@ -110,10 +111,60 @@
   flex-wrap: wrap;
 }
 
+.stats__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 20%;
+}
+
+.stats__data:first-child {
+  align-items: flex-start;
+}
+
+.stat__bar-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.stat__bar-content progress {
+  width: 400px;
+  height: 30px;
+}
+
+.base-stat {
+  display: flex;
+  align-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+
+  font-weight: 600;
+}
+
+.stat__bar-content:first-child {
+  text-transform: uppercase;
+}
+
+
 .poke__moves-body {
-  background: #FFFFFF;
-  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 25px 15%;
+}
+
+progress {
+  -webkit-appearance: none;
 }
 
 .poke__moves {

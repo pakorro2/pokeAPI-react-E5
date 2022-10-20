@@ -35,7 +35,7 @@ const PokedexById = () => {
             <h1 className={`poke__id letter-${response?.types[0].type.name}`}>
               #{response?.id}
             </h1>
-            <h3 className="poke__name">{response?.name}</h3>
+            <h3 className={`poke__name  letter-${response?.types[0].type.name}`}>{response?.name}</h3>
             <div className="poke__meter-content">
               <div className="poke__meter">
                 <span className="meter-tag">Weight</span>
@@ -65,27 +65,30 @@ const PokedexById = () => {
               </div>
             </div>
           </section>
-          <section className="secondary__data">
+          <section className="stats__data">
             <h2>Stats</h2>
             <ul>
+
               {response?.stats.map((stat) => (
-                <li>
-                  {stat.stat.name}
-                  <span> {stat["base_stat"]}</span>
+                <li className="stat__bar-content"><label for="file">{stat.stat.name}:</label>
+                  <div className="base-stat">
+                    <span>{stat["base_stat"]}/150 </span>
+                    <progress id="file" max="100" value={stat["base_stat"]}>  </progress>
+                  </div>
                 </li>
-              ))}
-            </ul>
-          </section>
-          <section className="poke__moves-body">
-            <h2>Movements</h2>
-            <ul className="poke__moves">
-              {response?.moves.map((move) => (
-                <li className="poke__move">{move.move.name}</li>
               ))}
             </ul>
           </section>
         </>
       )}
+      <section className="poke__moves-body">
+        <h2>Movements</h2>
+        <ul className="poke__moves">
+          {response?.moves.map((move) => (
+            <li className="poke__move">{move.move.name}</li>
+          ))}
+        </ul>
+      </section>
     </article>
   );
 };
